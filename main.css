@@ -19,6 +19,7 @@
 }
 
 body::after{
+    padding-top: env(safe-area-inset-top);
     content: "";
     position: fixed;
     top: 0;
