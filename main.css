@@ -18,11 +18,11 @@
 }
 
 .body{
-    background-image: url(./src/84b5a1242f53c6a7acdb2054ac8dbb83.jpg);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:fixed;
+	background-image: url(./src/84b5a1242f53c6a7acdb2054ac8dbb83.jpg);
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment:fixed;
 }
 
 .container{
