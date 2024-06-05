@@ -25,14 +25,11 @@ body::after{
     left: 0;
     right: 0;
     z-index: -100;
-    background-image: url(./src/84b5a1242f53c6a7acdb2054ac8dbb83.jpg);
+    background: url(./src/84b5a1242f53c6a7acdb2054ac8dbb83.jpg) center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:fixed;
 }
 
 .container{
