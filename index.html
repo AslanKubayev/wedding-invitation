@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пригласительное</title>
+    <link rel="icon" href="./src/wedding-couple.png">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ms+Madi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+</style>
+<body>
+
+    <div class="container">
+        <div class="audio">
+            <button onclick="audioPlayPause()" class="audio_button">
+                <img id="play" class="audio_icon" src="./src/play-buttton.png" alt="">
+                <img id="pause" class="audio_icon" src="./src/pause.png" alt="">
+            </button>
+            <audio id="audio" src="./src/(Kanatbek Remix).mp3"></audio>
+        </div>
+        <div class="container_inner">
+            <div class="main">
+                <div class="main_inner">
+                    <div class="main_names_box _anim-items">
+                        <img src="./src/Aibol & Sura.png" alt="">
+                        <div>
+                            <img src="./src/line.png" alt="">
+                            <p>03.08.2024</p>
+                            <img src="./src/line.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="perehod _anim-items">
+                    <img class="perehod_img" src="./src/ornament2.png">
+                </div>
+                <div class="second_text">
+                    <div class="second_text_inner _anim-items">
+                        <p>
+                            Қол ұстасып отау тіккен қос бота, <br>
+                            Көпшіліктің ақ батасын алмақшы.
+                        </p>
+                    </div>
+                </div>
+                <div class="perehod1 _anim-items">
+                    <img class="perehod_img" src="./src/ornament2.png">
+                </div>
+            </div>
+            <div class="third_text">
+                <div class="third_text_inner _anim-items">
+                    <h1>Құрметті қонақтар!</h1>
+                    <p>
+                        Сіз(дер)ді балаларымыз <br>
+                        <span>Aibol</span>&nbsp&nbsp мен  &nbsp&nbsp<span>Sura</span> <br>
+                        үйлену тойына арналған <br>
+                        салтанатты дастарханымыздың <br>
+                        қадірлі қонағы болуға шақырамыз!
+                    </p>
+                </div>
+                <div class="perehod3 _anim-items">
+                    <img class="perehod_img" src="./src/ornament2.png">
+                </div>
+            </div>
+            <div class="date_slide">
+                <div class="date_slide_inner">
+                    <div class="calendar">
+                        <div class="calendar_inner _anim-items">
+                            <img class="heart" src="./src/e302455f229693a58f79.png" alt="">
+                            <div class="calendar_header">
+                                <div>Тамыз</div>                             
+                                <div>2024</div>
+                            </div>
+                            <table class="calendar_table">
+                                <tbody>
+                                    <tr>
+                                        <td class="prev">29</td>
+                                        <td class="prev">30</td>
+                                        <td class="prev">31</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td style="color: red;">3</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr></tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                        <td>11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td>25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td>31</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>31</td>
+                                        <td class="prev">1</td>
+                                        <td class="prev">2</td>
+                                        <td class="prev">3</td>
+                                        <td class="prev">4</td>
+                                        <td class="prev">5</td>
+                                        <td class="prev">6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="calendar_time">
+                                <div class="calendar_time_top">Басталу уакыты</div>
+                                <div class="calendar_time_bot" style="color: red;">
+                                    ---15:00---
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="perehod5 _anim-items">
+                        <img class="perehod_img" src="./src/ornament2.png">
+                    </div>
+                    <div class="timer">
+                        <div class="countdown _anim-items" id=countdown>
+                            <div class="countdown_header">
+                                Той салтанатына дейін
+                            </div>
+                            <div class="countdown_inner">
+                                <div class="time">
+                                    <h2 id="days">00</h2>
+                                    <small>күн</small>
+                                </div>
+                                <span>:</span>
+                                <div class="time">
+                                    <h2 id="hours">00</h2>
+                                    <small>сағат</small>
+                                </div>
+                                <span>:</span>
+                                <div class="time">
+                                    <h2 id="minutes">00</h2>
+                                    <small>минут</small>
+                                </div>
+                                <span>:</span>
+                                <div class="time">
+                                    <h2 id="seconds">00</h2>
+                                    <small>секунд</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="perehod6 _anim-items">
+                        <img class="perehod_img" src="./src/ornament2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="programma">
+                <div class="programma_inner">
+                    <div class="programma_box _anim-items">
+                        <div class="programma_header">
+                            <div style="justify-content: flex-start;">
+                                <h1>Той күнінің</h1>
+                            </div>
+                            <div style="justify-content: flex-end;">
+                                <h1>бағдарламасы</h1>
+                            </div>
+                        </div>
+                        <div class="programma_body">
+                            <div class="programma_side">
+                                <div class="programma_side_part">
+                                    <img src="./src/746121.png" alt="">
+                                </div>
+                                <div class="programma_side_part text">
+                                    <h2>
+                                        16:00
+                                    </h2>
+                                    <p>
+                                        ТОЙДЫҢ БАСТАЛУЫ
+                                    </p>
+                                </div>
+                                <div class="programma_side_part">
+                                    <img src="./src/marriage_2569767.png" alt="">
+                                </div>
+                                <div class="programma_side_part text">
+                                    <h2>
+                                        20:00
+                                    </h2>
+                                    <p>
+                                        СВАДЕБНЫЙ ТОРТ
+                                    </p>
+                                </div>
+                                <div class="programma_side_part">
+                                    <img src="./src/dance.png" alt="">
+                                </div>
+                            </div>
+                            <div class="programma_side">   
+                                <div class="programma_side_part text">
+                                    <h2>
+                                        15:00
+                                    </h2>
+                                    <p>
+                                        ҚОНАҚТАРДЫҢ ЖИНАЛУЫ,
+                                        ФОТОСЕССИЯ, ФУРШЕТ
+                                    </p>
+                                </div>
+                                <div class="programma_side_part">
+                                    <img src="./src/decoration-flower_11339243.png" alt="">
+                                </div>
+                                <div class="programma_side_part text">
+                                    <h2>
+                                        16:30
+                                    </h2>
+                                    <p>
+                                        ЖАСТАРДЫ ҚАРСЫ АЛУ, БЕТАШАР
+                                    </p>
+                                </div>
+                                <div class="programma_side_part">
+                                    <img src="./src/cake_3843078.png" alt="">
+                                </div>
+                                <div class="programma_side_part text">
+                                    <h2>
+                                        22:00
+                                    </h2>
+                                    <p>
+                                        МУЗЫКАЛЫҚ БИ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="address">
+                <div class="address_inner">
+                    <div class="perehod7 _anim-items">
+                        <img style="margin-bottom: 5vh;" class="perehod_img" src="./src/ornament2.png">
+                    </div>
+                    <div class="address_box _anim-items">
+                        <div class="address_header">
+                            <div>
+                                <h1>МЕКЕН-ЖАЙЫ:</h1>
+                            </div>
+                        </div>
+                        <div class="address_body">
+                            <div>
+                                <p>
+                                    Астана қаласы, <br>
+                                    Мугалжар көшесі, 80. <br>
+                                    <span>"Арлан"</span> <br> мейрамханасы
+                                </p>
+                            </div>
+                        </div>
+                        <div class="address_link">
+                            <div>
+                                <p>
+                                    Сіздерге ыңғайлы болуы үшін <br>
+                                    төменде көрсетілген<br>
+                                    2Gis картаны<br>
+                                    пайдалануыңызды сұраймыз:
+                                </p>
+                            </div>
+                            <div class="address_link_button">
+                                <a href="https://2gis.kz/astana/geo/70000001018081688">2GIS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ending">
+                <div class="ending_inner">
+                    <div class="perehod8 _anim-items">
+                        <img class="perehod_img" src="./src/ornament2.png">
+                    </div>
+                    <div class="ending_inner_box _anim-items">
+                        <p>
+                            Шақырамыз тойымызға келіңіз, <br>
+                            Жас өмірдің қуанышын көріңіз. <br>
+                            Әсем әннің толқуында би билеп, <br>
+                            Көңілді кештің сый қонағы болыңыз. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer_inner">
+                    <p>
+                        <span>Той иелері :</span> &nbsp Айнагуль, Аслан
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./animation.js"></script>
+</body>
+</html>

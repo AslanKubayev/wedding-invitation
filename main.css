@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ms+Madi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+	font-family: 'Sweet Mavka Script';
+	src: url('./fonts/Sweet\ Mavka\ Script.woff2') format('woff2'), url('./fonts/Sweet\ Mavka\ Script.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'My Font';
+    src: url(./fonts/KZ_Sign_Painter.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./src/84b5a1242f53c6a7acdb2054ac8dbb83.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+.container{
+    display: block;
+    position: relative;
+}
+
+.audio {
+    position: fixed;
+    left: 82%;
+    top: 1%;
+    z-index: 100;
+    border: 5px solid #000000b8;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+
+.audio_button{
+    border: none;
+    background: none;
+    /* margin: 15%; */
+}
+
+.audio_icon{
+    display: none;
+    width: 8vw;
+    height: auto;
+    opacity: 0.7;
+    /* padding: 10%; */
+}
+
+#play{
+    display: block;
+}
+
+.main{
+    height: 100vh;
+    display: block;
+    width: 100%;
+}
+
+.main_inner{
+    padding-top: 27vh;
+    padding-bottom: 8vh;
+    width: 100%;
+    height: 66%;
+}
+
+.main_names_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 234, 213, 0.9);
+    padding-bottom: 10px;
+    height: 80%;
+    padding-top: 10px;
+
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1.5s ease 0s;
+}
+
+.main_names_box._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.main_names_box img {
+    width: auto;
+    height: 75%;
+}
+.main_names_box div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_names_box div p{
+    margin: 0;
+    text-align: center;
+    font-size: x-large;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: auto;
+    height: auto;
+}
+
+.main_names_box div img{
+    width: 15%;
+    height: 0.5vh;
+}
+
+.perehod{
+    height: auto;
+    margin: 1vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.perehod._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.perehod1{
+    height: auto;
+    margin: 1vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.perehod1._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+
+.perehod3{
+    height: auto;
+    margin: 1vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.perehod3._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.perehod4{
+    height: auto;
+    margin: 1vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.perehod4._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.perehod5{
+    height: auto;
+    margin: 1vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.perehod5._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.perehod6{
+    height: auto;
+    margin: 1vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.perehod6._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.perehod7{
+    height: auto;
+    margin: 1vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.perehod7._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.perehod8{
+    height: auto;
+    margin: 1vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.perehod8._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.perehod9{
+    height: auto;
+    margin: 1vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.perehod9._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.perehod_img{
+    width: 40%;
+    height: auto;
+}
+
+.second_text{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second_text_inner{
+    width: auto;
+    height: auto;
+
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.second_text_inner._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.second_text_inner p{
+    font-family: 'My Font';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 165%;
+    background-color: rgba(247, 225, 199, 0.9);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.third_text{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.third_text_inner{
+    background-color: rgba(247, 225, 199, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 30%;
+
+    transform: translate(0, 20%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.third_text_inner._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.third_text_inner h1{
+    font-family: 'My Font';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 250%;
+    margin-top: 10%;
+    margin-bottom: 18%;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+}
+.third_text_inner p{
+    font-family: 'Sweet Mavka Script';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 150%;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.third_text_inner p span{
+    font-family: "Ms Madi", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 270%;
+    line-height: 1.2;
+}
+
+.date_slide{
+    height: 100vh;
+}
+
+.date_slide_inner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.calendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(247, 225, 199, 0.9);
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+
+    transform: translate(0, 50%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.calendar_inner._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.calendar_header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.calendar_header div{
+    padding: 2%;
+    font-size: 30px;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.calendar_table{
+    font-size: 20px;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.calendar_table tbody tr td{
+    font-size: 150%;
+    padding: 4px 5px;
+    text-align: center;
+}
+
+.heart{
+    position: absolute;
+    width: 15.2%;
+    top: 16%;
+    left: 69.4%;
+
+    transform: scale(1);
+    transition: all 0.2s ease 0s;
+}
+
+.prev{
+    color: rgb(123, 123, 123);
+    font-weight: 300;
+}
+
+.calendar_time{
+    text-align: center;
+    border-top: 2px solid black;
+    width: 80%;
+    padding-top: 2%;
+}
+
+.calendar_time_top{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 800;
+    font-size: 140%;
+}
+
+.calendar_time_bot{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-size: 140%;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.countdown {
+    background-color: rgba(247, 225, 199, 0.9);
+    border-radius: 20px;
+    padding: 20px 0 20px 0;
+    width: 90%;
+
+    transform: translate(0, 50%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.countdown._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.countdown_header{
+    text-align: center;
+    padding-bottom: 3%;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 800;
+    font-size: 160%;
+}
+
+.countdown_inner{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.countdown span{
+    font-size: 250%;
+    margin-bottom: 12%;
+}
+
+.time {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.time h2 {
+	margin: 0 0 10px;
+	font-size: 300%;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.time small {
+	font-size: 150%;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.programma{
+    height: 100vh;
+}
+
+.programma_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.programma_box{
+    background-color: rgba(247, 225, 199, 0.9);
+    padding: 10px;
+    border-radius: 20px;
+    height: 90%;
+
+    transform: translate(0, 30%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.programma_box._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.programma_header{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.programma_header div{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+}
+
+.programma_header div h1{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 700;
+    font-style: normal;
+    border-bottom: 2px solid black;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    font-size: 4vh;
+}
+
+.programma_body{
+    display: flex;
+    justify-content: center;
+    height: 82%;
+}
+
+.programma_side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programma_side_part{
+    width: 35vw;
+    height: 25vw;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    width: 40vw;
+}
+
+.text p {
+    font-size: 2vh;
+}
+
+.programma_side_part h2{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vh;
+}
+
+.programma_side_part p {
+    text-align: center;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.programma_side_part img{
+    width: 20vw;
+}
+
+.address{
+    height: 100vh;
+}
+
+.address_inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.address_box{
+    background-color: rgba(247, 225, 199, 0.9);
+    padding: 10px;
+    border-radius: 20px;
+    width: 90%;
+    height: 70%;
+
+    transform: translate(0, 30%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.address_box._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.address_header{
+    width: 100%;
+    height: 15%;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3vh;
+    text-align: center;
+}
+
+.address_header div{
+    width:fit-content;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+}
+
+.address_body{
+    height: 45%;
+    margin-top: 1vh;
+}
+
+.address_body div p{
+    font-family: 'Sweet Mavka Script';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3.5vh;
+    text-align: center;
+}
+
+.address_body div p span{
+    font-size: 4.5vh;
+    font-weight: 800;
+    line-height: 0.8;
+}
+
+.address_link{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address_link div p {
+    text-align: center;
+    font-family: 'My Font';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+}
+
+.address_link_button{
+    display: flex;
+    justify-content: center;
+}
+
+.address_link_button a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 17%;
+    font-size: 3.5vh;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 1px 9px 3px rgb(64, 123, 64);
+}
+
+.ending{
+    height: 50vh;
+}
+
+.ending_inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.ending_inner_box{
+    background-color: rgba(247, 225, 199, 0.9);
+    padding: 10px;
+    border-radius: 20px;
+    width: 90%;
+    max-height: 70%;
+    margin-bottom: 30%;
+
+    transform: translate(0, 30%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.ending_inner_box._active{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.ending_inner_box p{
+    font-family: 'My Font';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.1vh;
+    text-align: center;
+}
+
+.footer{
+    height: 12vh;
+    width: 100%;
+    background-color: rgb(163, 135, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_inner{
+    width: max-content;
+    height: auto;
+}
+
+.footer_inner p{
+    font-family: 'My Font';
+    font-weight: 200;
+    font-style: normal;
+    font-size: 200%;
+    color: white;
+}
+
+.footer_inner p span{
+    font-family: 'My Font';
+    font-weight: 600;
+    font-style: normal;
+}
